@@ -37,6 +37,7 @@ $(document).ready(() => {
         }
 
         mainContainerElements.html(`<div><span>${generatedRandomElements.join('</span></div><div><span>')}</span></div>`);
+        mainContainerComputedResult.text(`Calculate`);
     });
 
 
