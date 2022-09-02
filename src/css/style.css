@@ -1,0 +1,102 @@
+* {
+    font-family: 'Roboto', sans-serif;    
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #222631;
+}
+
+#header {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#header p {
+    font-size: 2em;
+    margin-left: 15px;
+}
+
+#tstk-main-logo {
+    width: 350px;
+}
+
+#main-container {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+#main-container-wrapper {
+    height: 50%;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+#main-container-elements{
+    height: 200px;
+    overflow: auto;
+    background-color: #ddd;
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    flex-direction: row;    
+}
+
+
+
+#main-container-elements div{           
+    font-size: 25px;
+    background-color: #fff;
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;       
+    text-align: center;
+    margin: 5px;
+    position: relative;
+}
+#main-container-elements div span{           
+    left: 0px;
+    width: 100%;
+    top: 5px;
+    position: absolute;
+}
+
+
+#main-container-computed-wrapper{
+    border-radius: 50px;
+    background-color: #3badbc;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#main-container-computed-wrapper:hover{
+    background-color: #9de2eb;
+    transition: all 0.5s;
+}
