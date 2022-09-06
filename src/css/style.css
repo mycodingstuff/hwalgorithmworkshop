@@ -96,7 +96,34 @@ html {
     cursor: pointer;
     transition: all 0.5s;
 }
+
 #main-container-computed-wrapper:hover{
     background-color: #9de2eb;
     transition: all 0.5s;
 }
+
+#workShopSlider{
+    width: 95%;
+}
+
+#workShopSlider .carousel-control-prev{
+    left: -10%;    
+}
+#workShopSlider .carousel-control-prev span{
+    background-color: #222631;
+}
+
+#workShopSlider .carousel-control-next{
+    right: -10%;    
+}
+#workShopSlider .carousel-control-next span{
+    background-color: #222631;
+}
+
+#workShopSlider .carousel-indicators{
+    margin-bottom: -20px;
+}
+#workShopSlider .carousel-indicators button{
+    background-color: #222631;
+}
+
