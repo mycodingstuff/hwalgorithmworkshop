@@ -29,17 +29,12 @@ function benchMarkFunction(callback){
 }
 
 function addSuccessMarkTo(target){
-    target.html(`<div class="success-checkmark">
-    <div class="check-icon">
-      <span class="icon-line line-tip"></span>
-      <span class="icon-line line-long"></span>
-      <div class="icon-circle"></div>
-      <div class="icon-fix"></div>
-    </div>
-  </div>
-  <center>Better performance, faster computation</center>`);
+    target.html(`<p>&#128077;</p>`);
 }
 
+function addFailMarkTo(target){
+    target.html(`<p>&#128078;</p>`);
+}
 $(document).ready(() => {
 
     let randomSetSize = $("#random-set-size");
@@ -90,8 +85,10 @@ $(document).ready(() => {
 
         if(sortingTime < traverseTime){
             addSuccessMarkTo(sortingAlgorithmSuccessMark);
+            addFailMarkTo(traverseAlgorithmSuccessMark);
         }else{
             addSuccessMarkTo(traverseAlgorithmSuccessMark);
+            addFailMarkTo(sortingAlgorithmSuccessMark);
         }
         
         mainContainerComputedResult.text(`The highest number is: ${getHigherNumberSorting(generatedRandomElements)} `);
