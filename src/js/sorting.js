@@ -63,12 +63,14 @@ $(document).ready(() => {
         generatedRandomElements = [];
         let totalElements = randomSetSize.val();
 
-        for (var i = 0; i <= totalElements; i++) {
-            generatedRandomElements.push(getRandomInt(100000));
+        for (var i = 0; i < totalElements; i++) {
+            generatedRandomElements.push(getRandomInt(1000000));
         }
 
         mainContainerElements.html(`<div><span>${generatedRandomElements.join('</span></div><div><span>')}</span></div>`);
         mainContainerComputedResult.text(`Calculate`);
+        traverseAlgorithmSuccessMark.html("");
+        sortingAlgorithmSuccessMark.html("");
     });
 
 
