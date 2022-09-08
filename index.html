@@ -39,7 +39,7 @@
 
               <div class="row">
 
-                <div class="offset-lg-9 col-lg-3">
+                <div class="offset-lg-7 col-lg-5">
                   <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Generate random set"
                       aria-describedby="button-generate" id="random-set-size">
@@ -69,10 +69,17 @@
             <div class="container with-divider">
               <div class="row">
                 <div class="col">
-                  <pre id="sorting-algorithm-code" class="algorithm-code"></pre>
+                  <h6>Natural Language</h6>
+                  <div class="natural-language-container">
+                    <ul>
+                      <li>sort list ascending</li>
+                      <li>get the last element on the list</li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="col">
-                  Column
+                  <h6>Computer Language</h6>
+                  <pre id="sorting-algorithm-code" class="algorithm-code"></pre>
                 </div>
               </div>
             </div>
@@ -87,10 +94,18 @@
             <div class="container with-divider">
               <div class="row">
                 <div class="col">
-                  <pre id="traverse-algorithm-code" class="algorithm-code"></pre>
+                  <h6>Natural Language</h6>
+                  <div class="natural-language-container">
+                    <ul>
+                      <li>Create a max variable and initialize it with the first element in the list</li>
+                      <li>Iterate from the first element to the last element of the list</li>
+                      <li>If the element is greater than the next element  then update max with element value</li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="col">
-                  Column
+                  <h6>Computer Language</h6>
+                  <pre id="traverse-algorithm-code" class="algorithm-code"></pre>
                 </div>
               </div>
             </div>
@@ -117,10 +132,13 @@
                   <div class="algorithm-success-mark" id="traverse-algorithm-success-mark"></div>
                 </div>
               </div>
+              <div id="percentage-mark">
+                <span id="percentage-mark-value"></span>
+              </div>
             </div>
           </div>
           <div id="questions-img-container" class="carousel-item" data-bs-interval="9999999999">
-           <img id="questions-img" src="src/images/questions.png" >
+            <img id="questions-img" src="src/images/questions.png">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#workShopSlider" data-bs-slide="prev">

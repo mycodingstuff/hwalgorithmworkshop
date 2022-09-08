@@ -12,7 +12,7 @@ html {
 
 #header {
   background-color: #fff;
-  padding: 30px;
+  padding: 10px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -20,12 +20,13 @@ html {
 }
 
 #header p {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-left: 15px;
+  margin-top: 15px;
 }
 
 #tstk-main-logo {
-  width: 350px;
+  width: 250px;
 }
 
 #main-container {
@@ -41,7 +42,7 @@ html {
 
 #main-container-wrapper {
   height: 70%;
-  width: 70%;
+  width: 85%;
   background-color: #fff;
   border-radius: 50px;
   display: flex;
@@ -53,13 +54,13 @@ html {
   height: 95%;
   overflow: auto;
   background-color: #ddd;
-  margin: 10px 0px;
+  margin: 5px 0px;
   padding: 5px;
   border-radius: 5px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -73,7 +74,7 @@ html {
   width: 70px;
   border-radius: 5px;
   text-align: center;
-  margin: 5px;
+  margin: 5px 2px;
   position: relative;
 }
 
@@ -84,16 +85,20 @@ html {
   position: absolute;
 }
 
+#main-container-elements-row {
+  height: 60%;
+}
+
 
 #main-container-computed-wrapper {
   border-radius: 50px;
   background-color: #3badbc;
-  height: 100px;
+  height: 50px;
   width: 100%;
   text-align: center;
-  font-size: 40px;
+  font-size: 20px;
   color: #fff;
-  padding-top: 15px;
+  padding-top: 10px;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -131,15 +136,13 @@ html {
   background-color: #222631;
 }
 
-
-
 .algorithm-execution-time {
   background-color: #222631 !important;
 }
 
 pre {
   margin-top: 15px;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .carousel {
@@ -169,17 +172,13 @@ pre {
 
 #questions-img {
   margin: 0 auto;
-  width: 650px;
+  width: 550px;
   border-radius: 50px;
   text-align: center;
 }
 
 #questions-img-container {
   text-align: center;
-}
-
-#main-container-elements-row {
-  height: 70%;
 }
 
 .algorithm-success-mark {
@@ -189,4 +188,33 @@ pre {
 .algorithm-success-mark p {
   font-size: 8em;
   padding-top: 50px;
+}
+
+.natural-language-container{
+  margin-top: 10px;
+  font-style: italic;
+}
+
+h6{
+  border-bottom: 2px solid #222631;
+  padding-bottom: 4px;
+}
+
+#percentage-mark{
+  position: absolute;
+  background-color: #3badbc;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  text-align: center;
+}
+#percentage-mark-value{
+  font-size: 20px;
+  margin-top: 25px;
+  display: block;
 }

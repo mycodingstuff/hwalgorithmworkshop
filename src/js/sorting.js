@@ -46,6 +46,7 @@ $(document).ready(() => {
     let sortingAlgorithmExecutionTime = $(".sorting-algorithm-execution-time");
     let traverseAlgorithmSuccessMark = $("#traverse-algorithm-success-mark");
     let sortingAlgorithmSuccessMark = $("#sorting-algorithm-success-mark");
+    let percentageMark = $("#percentage-mark-value");
     let generatedRandomElements = [];
 
      $("#traverse-algorithm-code")
@@ -71,6 +72,7 @@ $(document).ready(() => {
 
     mainContainerComputedWrapper.click(() => {
 
+        let percetange = 0;
         let sortingTime = benchMarkFunction(()=>{
             getHigherNumberSorting(generatedRandomElements)
         });
@@ -86,11 +88,16 @@ $(document).ready(() => {
         if(sortingTime < traverseTime){
             addSuccessMarkTo(sortingAlgorithmSuccessMark);
             addFailMarkTo(traverseAlgorithmSuccessMark);
+
+            percetange =  sortingTime / traverseTime;
         }else{
             addSuccessMarkTo(traverseAlgorithmSuccessMark);
             addFailMarkTo(sortingAlgorithmSuccessMark);
+            
+            percetange =  traverseTime / sortingTime;
         }
         
+        percentageMark.text(100 - (percetange * 100).toFixed(2)+"%");
         mainContainerComputedResult.text(`The highest number is: ${getHigherNumberSorting(generatedRandomElements)} `);
     });
 
